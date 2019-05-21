@@ -52,6 +52,7 @@ How does it work? (programmer side)
 CHO is a single threaded tool (multithreading capabilities have not been used), which has a modular structure. Each module has two mandatory `attr`:
 - `do_request(h)`: this is the core function of a module, which is responsible for querying (online?) hash databases, starting from a string (`h`).
 - `verbose_name`: this is a string variable representing the module unique name.
+
 and an optional function `do_check_configuration(config)`, which performs some other checks starting from a ConfigParser object (`config`).
 
 Examples
