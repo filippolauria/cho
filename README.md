@@ -58,6 +58,8 @@ and an optional function `do_check_configuration(config)`, which performs some o
 Examples
 --------
 ```sh
+$ echo -n "11111111" | md5sum | cut -d' ' -f1
+1bbd886460827015e5d605ed44252251
 $ ./cho.py -s 1bbd886460827015e5d605ed44252251
   ...
        NITRXGEN: hash '1bbd886460827015e5d605ed44252251' => plaintext: '11111111', algorithm: 'md5'
@@ -65,7 +67,7 @@ $ ./cho.py -s 1bbd886460827015e5d605ed44252251
 ```
 
 ```sh
-$ ./cho.py -vvv 7a5c2392d26b8e656edecb81200cfbbe
+$ ./cho.py -vvv $( echo -n "141830982" | md5sum | cut -d' ' -f1 )
   ...
 MD5.My-Addr.com: this module seems to be well configured
      Hashes.org: have you configured API Key?
@@ -73,15 +75,23 @@ MD5.My-Addr.com: this module seems to be well configured
        NITRXGEN: this module seems to be well configured
    Hash Toolkit: this module seems to be well configured
             cho: loaded 4 module(s) out of 5.
-   Hash Toolkit: hash '7a5c2392d26b8e656edecb81200cfbbe' => unable to crack
-       NITRXGEN: hash '7a5c2392d26b8e656edecb81200cfbbe' => plaintext: '141830982', algorithm: 'md5'
-MD5.My-Addr.com: hash '7a5c2392d26b8e656edecb81200cfbbe' => plaintext: '141830982', algorithm: 'md5'
   Md5() Decrypt: hash '7a5c2392d26b8e656edecb81200cfbbe' => unable to crack
+       NITRXGEN: hash '7a5c2392d26b8e656edecb81200cfbbe' => plaintext: '141830982', algorithm: 'md5'
+   Hash Toolkit: hash '7a5c2392d26b8e656edecb81200cfbbe' => unable to crack
+MD5.My-Addr.com: hash '7a5c2392d26b8e656edecb81200cfbbe' => plaintext: '141830982', algorithm: 'md5'
             cho: hash successfully cracked!
 ```
 
 ```sh
-$ ./cho.py -vv eba6567aa383bfce1b3f37c2d0fbce81
-  ...
+$ ./cho.py -vv $( echo -n "thestrongestmd5hashintheworld" | md5sum | cut -d' ' -f1 )
+  ...   
+MD5.My-Addr.com: this module seems to be well configured
+  Md5() Decrypt: this module seems to be well configured
+       NITRXGEN: this module seems to be well configured
+   Hash Toolkit: this module seems to be well configured
             cho: loaded 4 module(s) out of 5.
+MD5.My-Addr.com: hash '17be2d7b5d2c9381ab451cd725cca07c' => unable to crack
+       NITRXGEN: hash '17be2d7b5d2c9381ab451cd725cca07c' => unable to crack
+   Hash Toolkit: hash '17be2d7b5d2c9381ab451cd725cca07c' => unable to crack
+  Md5() Decrypt: hash '17be2d7b5d2c9381ab451cd725cca07c' => unable to crack
             cho: none of your 4 module(s) managed to crack this hash
