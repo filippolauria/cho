@@ -3,7 +3,8 @@
 #
 #  hashesorg.py
 #  
-#  Copyright 2019 Filippo Lauria
+#  Copyright 2019 Filippo Lauria (filippo.lauria@iit.cnr.it)
+#                 Gruppo Reti IIT-CNR (grupporeti-dev@iit.cnr.it)
 #  
 #  This program is free software; you can redistribute it and/or modify
 #  it under the terms of the GNU General Public License as published by
@@ -41,7 +42,6 @@ def do_check_configuration(config):
             'success': False,
             'message': "section '{}' not found in configuration file."
         }
-    
     
     api_key = config[verbose_name].get("api_key")
     if api_key:

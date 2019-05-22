@@ -3,7 +3,8 @@
 #
 #  cho.py
 #  
-#  Copyright 2019 Filippo Lauria
+#  Copyright 2019 Filippo Lauria (filippo.lauria@iit.cnr.it)
+#                 Gruppo Reti IIT-CNR (grupporeti-dev@iit.cnr.it)
 #  
 #  This program is free software; you can redistribute it and/or modify
 #  it under the terms of the GNU General Public License as published by
