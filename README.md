@@ -99,5 +99,5 @@ MD5.My-Addr.com: hash '17be2d7b5d2c9381ab451cd725cca07c' => unable to crack
 
 Contributors
 ------------
-Filippo Lauria (filippo.lauria@iit.cnr.it)
-Gruppo Reti IIT-CNR (grupporeti-dev@iit.cnr.it)
+- Filippo Lauria (filippo[dot]lauria[at]iit[dot]cnr[dot]it)
+- Gruppo Reti IIT-CNR (grupporeti[dash]dev[at]iit[dot]cnr[dot]it)
